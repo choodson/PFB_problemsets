@@ -1,0 +1,264 @@
+    1  cd /bin/
+    2  ls
+    3  ls -l
+    4  ls -lt
+    5  ls -lt | head
+    6  date ; sleep 2 ; date
+    7  cd ~
+    8  grep Chr7 cuffdiff.txt > fav_chr_cuttdiff.txt
+    9  ls
+   10  grep man
+   11  ls
+   12  cd /bin/
+   13  ls
+   14  ls -l
+   15  ls -lt
+   16  ls -lt | head
+   17  pwd
+   18  cd ~
+   19  pwd
+   20  cd ..
+   21  ls
+   22  ls -F
+   23  cd cho/
+   24  mkdir problemsets
+   25  ls
+   26  cd problemsets/
+   27  pwd
+   28  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+   29  ls
+   30  wc -lc sequences.nt.fa 
+   31  man head
+   32  head sequences.nt.fa 
+   33  tail sequences.nt.fa 
+   34  grep > sequences.nt.fa | wc -l
+   35  man grep
+   36  grep '>' sequences.nt.fa | wc -l
+   37  head sequences.nt.fa 
+   38  cat sequences.nt.fa 
+   39  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+   40  ls
+   41  grep '>' sequences.nt.fa.1 | wc -l
+   42  man mv
+   43  mv sequences.nt.fa.1 cancer_genes.fasta
+   44  ls
+   45  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+   46  ls
+   47  head cuffdiff.txt 
+   48  man sort
+   49  man sort
+   50  cd ..
+   51  ls
+   52  mkdir PFB_problemsets
+   53  ls
+   54  echo "# PFB_problemsets" >> README.md
+   55  git init
+   56  git add README.md 
+   57  git commit -m "first commit"
+   58  git remote add origin https://github.com/choodson/PFB_problemsets.git
+   59  git push -u origin master
+   60  git push -u origin master
+   61  ls
+   62  cd PFB_problemsets/
+   63  ls
+   64  ls -a
+   65  cd ..
+   66  ls -a
+   67  mv problemsets/ PFB_problemsets/
+   68  ls
+   69  PFB_problemsets/
+   70  cd PFB_problemsets/
+   71  ls
+   72  cd problemsets/
+   73  ls
+   74  cd ..
+   75  cd ..
+   76  git add PFB_problemsets/*
+   77  cd PFB_problemsets/
+   78  gt status
+   79  git status
+   80  mkdir unix1
+   81  ls
+   82  mv problemsets/ unix1/
+   83  ls
+   84  cd unix1/
+   85  ls
+   86  cd problemsets/
+   87  ls
+   88  cd ..
+   89  cd ..
+   90  git add unix1/
+   91  git commit -m 'adding previous problem set files'
+   92  git push
+   93  ssh-keygen -t rsa -b 4096 -C "christina.hodson@ed.ac.uk"
+   94  mkdir files
+   95  ls
+   96  cd files
+   97  cd ..
+   98  mv unix1/problemsets/cancer_genes.fasta files/
+   99  ls
+  100  cd files/
+  101  ls
+  102  cd ..
+  103  git add files/cancer_genes.fasta 
+  104  git commit -m 'adding cancer_genes.fasta'
+  105  git push
+  106  nano mysequences.txt
+  107  git add mysequences.txt 
+  108  git commit -m 'adding mysequences.fasta'
+  109  git push
+  110  mkdir fastas
+  111  ls
+  112  cp files/cancer_genes.fasta fastas/
+  113  cd fastas/
+  114  ls
+  115  cd ..
+  116  ls
+  117  cd files/
+  118  ls
+  119  rm cancer_genes.fasta 
+  120  ls
+  121  cd ..
+  122  git add all *
+  123  git add  *
+  124  git commit -m 'syncing files'
+  125  git push
+  126  ls
+  127  cd files/
+  128  ls
+  129  cd ..
+  130  man rm
+  131  man cp
+  132  history > unixbasics.history.txt
+  133  ls
+  134  nano unixbasics.history.txt 
+  135  git clone https://github.com/prog4biol/pfb2018.git
+  136  ls
+  137  cd pfb2018/
+  138  ls
+  139  cd ..
+  140  cd unix1/problemsets/
+  141  ls
+  142  sort -k10 > sorted.cuffdiff.txt
+  143  man sort
+  144  sort -k10 cuffdiff.txt > sorted.cuffdiff.txt
+  145  ls
+  146  heas sorted.cuffdiff.txt 
+  147  head sorted.cuffdiff.txt 
+  148  sort -gr -k10 cuffdiff.txt > sorted.cuffdiff.txt
+  149  head sorted.cuffdiff.txt 
+  150  less sorted.cuffdiff.txt 
+  151  man cut
+  152  cut -f10 sorted.cuffdiff.txt 
+  153  cut -f10 sorted.cuffdiff.txt | less
+  154  head -n 100 sorted.cuffdiff.txt > top100.sorted.cuffdiff.out
+  155  ls
+  156  wc -l top100.sorted.cuffdiff.out 
+  157  cut -f3 top100.sorted.cuffdiff.out | uniq -u > differentially.expressed.genes.txt
+  158  wc -l top100.sorted.cuffdiff.out 
+  159  cat top100.sorted.cuffdiff.out 
+  160  cat differentially.expressed.genes.txt 
+  161  wc -l differentially.expressed.genes.txt 
+  162  ls -al ~/.ssh
+  163  eval "$(ssh-agent -s)"
+  164  man head
+  165  man unique
+  166  man sort
+  167  python3
+  168  nano python1.py
+  169  chmod +x python1.py
+  170  ./python1.py
+  171  git add python1.py
+  172  git commit -m 'added name to print'
+  173  push python1.py
+  174  git push python1.py
+  175  git push
+  176  nano python1.py 
+  177  ./python1.py 
+  178  nano python1.py 
+  179  ./python1.py
+  180  nano python1.py 
+  181  ./python1.py 
+  182  nano python1.py 
+  183  ./python1.py 
+  184  nano python1.py 
+  185  ./python1.py 
+  186  nano python1.py 
+  187  ./python1.py Christina Purple Snowboarding Booklice
+  188  nano python1.py 
+  189  ./python1.py Christina Purple Snowboarding Booklice
+  190  nano python1.py 
+  191  ./python1.py Christina Purple Snowboarding Booklice
+  192  ./python1.py Christina Purple Snowboarding Booklice
+  193  ./python1.py Christina Purple Snowboarding Booklice
+  194  ./python1.py Christina Purple Snowboarding Booklice
+  195  ./python1.py Christina Purple Snowboarding Booklice
+  196  git add python1.py 
+  197  git commit -m "complete python1 problemset"
+  198  git push
+  199  history
+  200  python3
+  201  nano python2.py
+  202  chmod +x python2.py 
+  203  ./python2.py 
+  204  git add python2.py 
+  205  git commit -m 'if else statement for truth of number'
+  206  nano python3.py
+  207  chmod +x python3.py 
+  208  ./python3.py 
+  209  ./python3.py 5
+  210  nano python3.py 
+  211  ./python3.py 5
+  212  nano python3.py 
+  213  ./python3.py 5
+  214  nano python3.py 
+  215  ./python3.py 40
+  216  nano python3.py 
+  217  ./python3.py 40
+  218  ./python3.py 30
+  219  ./python3.py True
+  220  nano python3.py 
+  221  ./python3.py True
+  222  nano python3.py 
+  223  ./python3.py True
+  224  ./python3.py 5
+  225  ./python3.py False
+  226  ./python3.py 0
+  227  nano python3.py 
+  228  ./python3.py False
+  229  nano python3.py 
+  230  nano python4.py
+  231  chmod +x python4.py 
+  232  ./python4.py 
+  233  nano python4.py
+  234  ./python4.py 
+  235  nano python4.py
+  236  nano python4.py 0
+  237  ./python4.py 0
+  238  ./python4.py 6
+  239  ./python4.py -3
+  240  nano python4.py
+  241  ./python4.py 5
+  242  ./python4.py 55
+  243  ./python4.py -2
+  244  ./python4.py -2
+  245  ./python4.py 43
+  246  ./python4.py 44
+  247  ./python4.py 44
+  248  ./python4.py 43
+  249  ./python4.py 43
+  250  ./python4.py 43
+  251  ./python4.py 44
+  252  ./python4.py 60
+  253  ./python4.py 60
+  254  ./python4.py 61
+  255  ./python4.py 61
+  256  ./python4.py 60
+  257  ./python4.py 50
+  258  ./python4.py 50
+  259  git add python4.py 
+  260  git status
+  261  git add python3.py 
+  262  git commit -m 'exercises about if statements in python'
+  263  git push
+  264  history > python1.history.txt
